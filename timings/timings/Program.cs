@@ -35,7 +35,7 @@ namespace timings
                 Stopwatch stopWatch = new Stopwatch();
                 stopWatch.Start();
 
-                //METHOD HERE
+                listOfNumbers.Sort();
 
                 stopWatch.Stop();
                 list.Add(stopWatch.Elapsed.TotalMilliseconds);
@@ -45,8 +45,24 @@ namespace timings
 
             foreach (var time in list)
             {
-                Console.WriteLine("{0}ms", time);
+                Console.WriteLine(time);
             }
+        }
+
+        static List<E> ShuffleList<E>(List<E> inputList)
+        {
+            List<E> randomList = new List<E>();
+
+            Random r = new Random();
+            int randomIndex = 0;
+            while (inputList.Count > 0)
+            {
+                randomIndex = r.Next(0, inputList.Count);
+                randomList.Add(inputList[randomIndex]);
+                inputList.RemoveAt(randomIndex);
+            }
+
+            return randomList;
         }
     }
 }
