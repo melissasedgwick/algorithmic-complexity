@@ -48,3 +48,13 @@ Testing the Shuffle method:
 
 Testing the Sort method:
 ![Sort](images/Sort.png)
+
+## Alrogithms
+
+Within the `algorithms` sub-folder, there is an application that checks for duplicates in a list of strings or integers. This was a challenge to see if we could follow a process to create simple algorithms.
+
+Here are the results for the timing of this algorithm:
+
+![Duplicates](images/Duplicates.png)
+
+The timings are quite varied, however, as the execution time for the algorithm depends on if (and how soon) a duplicate value appears. 
