@@ -17,5 +17,19 @@ namespace Algorithm
 
             return false;
         }
+
+        public int[] Reverse(int[] array)
+        {
+            int[] result = new int[array.Length];
+
+            int n = array.Length - 1;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                result[n] = array[i];
+                n--;
+            }
+            return result;
+        }
     }
 }
