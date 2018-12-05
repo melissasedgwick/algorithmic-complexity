@@ -70,3 +70,7 @@ The timings for this method are very similar to C#'s built in Reverse method.
 ![ShuffleArray-Own](images/ShuffleArray.png)
 
 I managed to make this a linear method compared with the quadratic Shuffle method above.
+
+### Pairing
+
+![Pairing](images/Pairing.png)
