@@ -31,5 +31,20 @@ namespace Algorithm
             }
             return result;
         }
+
+        public T[] ShuffleArray<T>(T[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Random rand = new Random();
+                int positionOne = rand.Next(array.Length);
+                int positionTwo = rand.Next(array.Length);
+
+                var temp = array[positionOne];
+                array[positionOne] = array[positionTwo];
+                array[positionTwo] = temp;
+            }
+            return array;
+        }
     }
 }

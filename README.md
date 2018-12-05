@@ -51,16 +51,22 @@ Testing the Sort method:
 
 ## Alrogithms
 
-Within the `algorithms` sub-folder, there is an application that checks for duplicates in a list of strings or integers. This was a challenge to see if we could follow a process to create simple algorithms.
+The `algorithms` sub-folder contains algorithms I've written. Below are the results for the timing tests of these.
 
-Here are the results for the timing of this algorithm:
+### Duplicates
 
 ![Duplicates](images/Duplicates.png)
 
 The timings are quite varied, however, as the execution time for the algorithm depends on if (and how soon) a duplicate value appears.
 
-Testing own Reverse method:
+### Reverse
 
 ![Reverse-Own](images/Reverse-own.png)
 
 The timings for this method are very similar to C#'s built in Reverse method.
+
+### ShuffleArray
+
+![ShuffleArray-Own](images/ShuffleArray.png)
+
+I managed to make this a linear method compared with the quadratic Shuffle method above.
