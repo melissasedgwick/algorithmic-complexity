@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace timings
 {
@@ -18,10 +19,11 @@ namespace timings
             {
                 var listOfNumbers = RandomListsAndArrays.GetRandomList(20000);
                 var arrayOfNumbers = RandomListsAndArrays.GetRandomArray(20000);
+                var listOfStrings = RandomListsAndArrays.GetRandomStringList(20000);
                 Stopwatch stopWatch = new Stopwatch();
                 stopWatch.Start();
 
-                //METHOD TO TIME HERE
+                // ADD METHOD HERE
 
                 stopWatch.Stop();
                 Console.WriteLine(stopWatch.Elapsed.TotalMilliseconds);

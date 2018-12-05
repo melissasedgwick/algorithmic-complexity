@@ -27,5 +27,18 @@ namespace timings
             }
             return array;
         }
+
+        public static List<string> GetRandomStringList(int length)
+        {
+            string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            List<string> list = new List<string>();
+            for (int i = 0; i < length; i++)
+            {
+                Random rand = new Random();
+                list.Add(chars[rand.Next(52)].ToString());
+            }
+            return list;
+        }
     }
 }
