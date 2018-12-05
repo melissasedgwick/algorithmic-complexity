@@ -46,5 +46,23 @@ namespace Algorithm
             }
             return array;
         }
+
+        public List<Array> Pairing(List<string> students)
+        {
+            List<Array> pairings = new List<Array>();
+
+            for (int i = 0; i < students.Count; i++)
+            {
+                var studentOne = students[i];
+
+                for (int j = i + 1; j < students.Count; j++)
+                {
+                    var studentTwo = students[j];
+                    string[] pairing = new string[] { studentOne, studentTwo };
+                    pairings.Add(pairing);
+                }
+            }
+            return pairings;
+        }
     }
 }
