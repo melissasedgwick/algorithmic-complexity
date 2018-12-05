@@ -57,4 +57,10 @@ Here are the results for the timing of this algorithm:
 
 ![Duplicates](images/Duplicates.png)
 
-The timings are quite varied, however, as the execution time for the algorithm depends on if (and how soon) a duplicate value appears. 
+The timings are quite varied, however, as the execution time for the algorithm depends on if (and how soon) a duplicate value appears.
+
+Testing own Reverse method:
+
+![Reverse-Own](images/Reverse-own.png)
+
+The timings for this method are very similar to C#'s built in Reverse method.
