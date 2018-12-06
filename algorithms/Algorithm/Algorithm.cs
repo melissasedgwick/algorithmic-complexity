@@ -64,5 +64,26 @@ namespace Algorithm
             }
             return pairings;
         }
+
+        public List<int> SelectionSort(List<int> unsortedList)
+        {
+            List<int> sortedList = new List<int>();
+
+            while (unsortedList.Count > 0)
+            {
+                int minValue = unsortedList[0];
+
+                foreach (var num in unsortedList)
+                {
+                    if (num < minValue)
+                    {
+                        minValue = num;
+                    }
+                }
+                sortedList.Add(minValue);
+                unsortedList.Remove(minValue);
+            }
+            return sortedList;
+        }
     }
 }
