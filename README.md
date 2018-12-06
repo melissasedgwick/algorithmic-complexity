@@ -74,3 +74,9 @@ I managed to make this a linear method compared with the quadratic Shuffle metho
 ### Pairing
 
 ![Pairing](images/Pairing.png)
+
+This is the most time-consuming method so far, as it requires nested loops.
+
+### SelectionSort
+
+![SelectionSort](images/SelectionSort.png)
