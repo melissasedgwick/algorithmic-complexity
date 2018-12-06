@@ -80,3 +80,11 @@ This is the most time-consuming method so far, as it requires nested loops.
 ### SelectionSort
 
 ![SelectionSort](images/SelectionSort.png)
+
+This method is a lot slower than the built in sort method.
+
+### QuickSort
+
+![QuickSort](images/QuickSort.png)
+
+Whilst this is still slower than the built in sort method, it is considerably faster on larger lists than the SelectionSort (own method).
